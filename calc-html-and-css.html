@@ -13,7 +13,7 @@ body{
     -webkit-box-sizing:border-box;
     -moz-box-sizing:border-box;
 }
-/* setting claculator border/backround */
+/* setting claculator border/backround */ 
 .wrap{
     width:400px;
     margin:auto;
@@ -45,6 +45,8 @@ input[type=button]{
    <form name ="cal">
        <!-- calculator buttons -->
        <input type ="text" name ="display">
+              <!-- clear button  -->
+       <input type ="button" value ="CLR" onclick ="cal.display.value= ''" id ="del">
        <!-- "br" defines next line, Break? -->
        <br><br> 
        <input type ="button" value ="9" onclick ="cal.display.value+='9'">
@@ -68,8 +70,8 @@ input[type=button]{
        <!-- eaqual (=) button defined by "eval" -->
        <input type ="button" value ="=" onclick ="cal.display.value =eval(cal.display.value) ">
        <br><br>
-       <!-- clear button  -->
-       <input type ="button" value ="CLEAR" onclick ="cal.display.value= ''" id ="del">
+
+      
    </form> 
 </div>
     </body>
